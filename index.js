@@ -5,7 +5,8 @@ import cors from 'cors';
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:5173',
+    // origin: 'http://localhost:5173',
+    origin: 'https://vercel.com/yaschukvladimirs-projects/test-task-maximum',
     credentials: true
 }));
 app.use(express.json());
@@ -76,6 +77,6 @@ app.get('/api/stock', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log(`Server running on http://localhost:3000`);
-});
+// app.listen(3000, () => {
+//     console.log(`Server running on http://localhost:3000`);
+// });
